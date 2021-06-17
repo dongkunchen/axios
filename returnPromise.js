@@ -1,28 +1,28 @@
 
 // axios({
-//   url: 'https://run.mocky.io/v3/a34c5fe1-6025-4c9d-8402-5c777b685476'
+//   url: 'https://dongkun1.000webhostapp.com'
 // }).then(res =>{
 //   console.log(res);
 // })
 
 //一次三個請求數據數組形式
 // axios.all([axios({
-//   url: 'https://run.mocky.io/v3/a34c5fe1-6025-4c9d-8402-5c777b685476'
+//   url: 'https://dongkun1.000webhostapp.com'
 // }),axios({
-//   url: 'https://run.mocky.io/v3/b6b3ee44-03f2-4d3d-84e1-1f2e68be6f7e'
+//   url: 'https://dongkun2.000webhostapp.com'
 // }),axios({
-//   url: 'https://run.mocky.io/v3/8e7a5232-2974-4621-a818-0985e623169e'
+//   url: 'https://dongkun3.000webhostapp.com'
 // })]).then(results=>{
 //   console.log(results);
 // })
 
 //數組展開三個請求展開
 axios.all([axios({
-  url: 'https://run.mocky.io/v3/a34c5fe1-6025-4c9d-8402-5c777b685476'
+  url: 'https://dongkun1.000webhostapp.com'
 }),axios({
-  url: 'https://run.mocky.io/v3/b6b3ee44-03f2-4d3d-84e1-1f2e68be6f7e'
+  url: 'https://dongkun1.000webhostapp.com'
 }),axios({
-  url: 'https://run.mocky.io/v3/8e7a5232-2974-4621-a818-0985e623169e'
+  url: 'https://dongkun1.000webhostapp.com'
 })]).then(axios.spread((res1,res2,res3)=>{
   const {data} = res1.data
   //const {data} = res2;
