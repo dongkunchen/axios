@@ -7,22 +7,22 @@
 
 //一次三個請求數據數組形式
 // axios.all([axios({
-//   url: 'https://dongkun1.000webhostapp.com'
+//   url: 'https://www.www.www'
 // }),axios({
-//   url: 'https://dongkun2.000webhostapp.com'
+//   url: 'https://www.www.www'
 // }),axios({
-//   url: 'https://dongkun3.000webhostapp.com'
+//   url: 'https://www.www.www'
 // })]).then(results=>{
 //   console.log(results);
 // })
 
 //數組展開三個請求展開
 axios.all([axios({
-  url: 'https://dongkun1.000webhostapp.com'
+  url: 'https://www.www.www'
 }),axios({
-  url: 'https://dongkun1.000webhostapp.com'
+  url: 'https://www.www.www'
 }),axios({
-  url: 'https://dongkun1.000webhostapp.com'
+  url: 'https://www.www.www'
 })]).then(axios.spread((res1,res2,res3)=>{
   const {data} = res1.data
   //const {data} = res2;
